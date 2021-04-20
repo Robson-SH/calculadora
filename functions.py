@@ -11,18 +11,18 @@ def captarDados():
     return[controle, num1, num2]
 
 def calcResult(dados):
-    d1 = float(dados[1])
-    d2 = float(dados[2])
-    controle = int(dados[0])
+    dados[1] = float(dados[1])
+    dados[2] = float(dados[2])
+    dados[0] = int(dados[0])
 
-    if(controle == 1):
-        return (d1+d2)
-    elif(controle == 2):
-        return (d1-d2)
-    elif(controle == 3):
-        return (d1*d2)
-    elif(controle == 4):
-        return (d1/d2)
+    if(dados[0] == 1):
+        return (dados[1]+dados[2])
+    elif(dados[0] == 2):
+        return (dados[1]+dados[2])
+    elif(dados[0] == 3):
+        return (dados[1]+dados[2])
+    elif(dados[0] == 4):
+        return (dados[1]+dados[2])
     else: 
         return ("Operação inválida!")
       
